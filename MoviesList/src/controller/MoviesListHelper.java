@@ -16,7 +16,7 @@ public class MoviesListHelper {
 		em.persist(li);
 		em.getTransaction().commit();
 		em.close();
-
+//
 	}
 	
 	public void deleteMovie(MoviesList toRemove) {
