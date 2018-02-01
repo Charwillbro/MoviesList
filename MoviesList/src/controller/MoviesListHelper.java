@@ -16,9 +16,8 @@ public class MoviesListHelper {
 		em.persist(li);
 		em.getTransaction().commit();
 		em.close();
-//
 	}
-	
+	//I can not, for the life of me, understand how the typed query section works
 	public void deleteMovie(MoviesList toRemove) {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();

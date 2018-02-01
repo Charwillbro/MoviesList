@@ -12,13 +12,12 @@ public class StartProgram {
 	static MoviesListHelper lih = new MoviesListHelper();
 
 	private static void addAnItem() {
-		
-		
+
 		System.out.print("Enter a movie title: ");
 		String title = in.nextLine();
 		System.out.print("Enter the runtime: ");
 		int runTime = in.nextInt();
-		
+
 		MoviesList toAdd = new MoviesList(title, runTime);
 		lih.insertMovie(toAdd);
 
@@ -31,8 +30,8 @@ public class StartProgram {
 		System.out.print("Enter the runtime to delete: ");
 		int runTime = in.nextInt();
 
-		MoviesList toRemove = new MoviesList(title, runTime);
-		lih.deleteMovie(toRemove);
+		//MoviesList toRemove = new MoviesList(title, runTime);
+		//lih.deleteMovie(toRemove);
 	}
 
 	private static void editAnItem() {
@@ -86,9 +85,9 @@ public class StartProgram {
 		while (goAgain) {
 			System.out.println("*  Select an item:");
 			System.out.println("*  1 -- Add an item");
-			System.out.println("*  2 -- Edit an item");
-			System.out.println("*  3 -- Delete an item");
-			System.out.println("*  4 -- View the list");
+			//System.out.println("*  2 -- Edit an item");
+			//System.out.println("*  3 -- Delete an item");
+		    //System.out.println("*  4 -- View the list");
 			System.out.println("*  5 -- Exit the awesome program");
 			System.out.print("*  Your selection: ");
 			int selection = in.nextInt();
@@ -117,4 +116,3 @@ public class StartProgram {
 
 	}
 }
-	
